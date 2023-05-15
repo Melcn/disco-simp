@@ -20,37 +20,31 @@ const routes: Routes = [
 
       {
         path: '',
-        component: IndexComponent
-      },
-
-      {
-        path: 'create',
         component: CreateComponent
       },
 
       {
-        path: 'read',
-        component: ReadComponent
-      },
+        path: ':id',
+        children: [
+          
+          {
+            path: 'read',
+            component: ReadComponent
+          },
 
-      { 
-        path: 'update',
-        component: UpdateComponent
-      },
+          { 
+            path: 'edit',
+            component: UpdateComponent
+          },
 
-      {
-        path: 'delete',
-        component: DeleteComponent
+          {
+            path: 'delete',
+            component: DeleteComponent
+          }
+        ]
       }
-
     ]
   },
-
-  {
-    path: '**',
-    component: IndexComponent
-  }
-
 ];
 
 @NgModule({

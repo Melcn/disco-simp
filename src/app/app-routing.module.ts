@@ -9,13 +9,14 @@ const routes: Routes = [
     path: '',
     pathMatch: 'full',
     redirectTo: '/homepage'
-  },
+  }
 
+  /*
   {
     path: '**',
     loadChildren: () => import('./pages/not-found/not-found.module').then(m => m.NotFoundModule)
   }
-
+*/
 
 ];
 

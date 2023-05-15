@@ -2,11 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ArtistModule } from './pages/artist/artist.module';
-import { AlbumModule } from './pages/album/album.module';
-import { TrackModule } from './pages/track/track.module';
-import { NotFoundModule } from './pages/not-found/not-found.module';
-import { HomepageModule } from './pages/homepage/homepage.module';
+import { CoreModule } from './core/core.module';
+import { PagesModule } from './pages/pages.module';
+
 
 @NgModule({
   declarations: [
@@ -14,6 +12,8 @@ import { HomepageModule } from './pages/homepage/homepage.module';
   ],
   imports: [
     BrowserModule,
+    CoreModule,
+    PagesModule,
     AppRoutingModule
   ],
   providers: [],
