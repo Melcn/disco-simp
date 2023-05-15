@@ -1,1 +1,8 @@
 <p>read works!</p>
+
+<nav>
+    <ul>
+        <li><a routerLink="/index">Home</a></li>
+        <li *ngFor="let item of myData">{{ item.name }}</li>
+    </ul>
+</nav>

@@ -7,6 +7,7 @@ import { CreateComponent } from './pages/create/create.component';
 import { ReadComponent } from './pages/read/read.component';
 import { UpdateComponent } from './pages/update/update.component';
 import { DeleteComponent } from './pages/delete/delete.component';
+import { HomepageModule } from '../homepage/homepage.module';
 
 
 @NgModule({

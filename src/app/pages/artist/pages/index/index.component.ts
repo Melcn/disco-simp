@@ -11,10 +11,13 @@ const url = "http://localhost:3000/artists";
 })
 export class IndexComponent {
 
-  constructor(private http: HttpClientModule) {}
+  constructor(private http: HttpClientModule) {
+    
+    // this.http.get('http://localhost:3000/artists').subscribe(data => {
+    // console.log(data);
+    // });
+  }
 
-  this.http.get('http://localhost:3000/artists').subscribe(data => {
-  console.log(data);
-});
+  
 
 }

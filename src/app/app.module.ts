@@ -6,17 +6,14 @@ import { ArtistModule } from './pages/artist/artist.module';
 import { AlbumModule } from './pages/album/album.module';
 import { TrackModule } from './pages/track/track.module';
 import { NotFoundModule } from './pages/not-found/not-found.module';
+import { HomepageModule } from './pages/homepage/homepage.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    ArtistModule,
-    AlbumModule,
-    TrackModule,
-    NotFoundModule,
     AppRoutingModule
   ],
   providers: [],
