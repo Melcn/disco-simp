@@ -9,6 +9,7 @@ import { UpdateComponent } from './pages/update/update.component';
 import { DeleteComponent } from './pages/delete/delete.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,7 +24,12 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     RouterModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
     AlbumRoutingModule
+  ],
+  exports: [
+    CreateComponent
   ]
 })
 export class AlbumModule { }

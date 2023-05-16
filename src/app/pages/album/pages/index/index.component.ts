@@ -1,8 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+
 import { Component, OnInit } from '@angular/core';
 import { AlbumService } from '../../services/album.service';
 
-const url = "http://localhost:3000/albums";
 
 @Component({
   selector: 'app-index',
@@ -19,6 +18,6 @@ export class IndexComponent implements OnInit{
 
   ngOnInit(): void {
     
-    this.albumService.getAlbums().subscribe(data => { this.albums = data});
+    this.albumService.albums.subscribe(data => this.albums = data);
   }
 }
